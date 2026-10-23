@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3RD MONTHSARY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="ambient-glow"></div>
+
+    <main class="scene-container">
+        <header class="scene-header" id="scene-header">
+            <h1 class="catchy-title font-cursive">A letter for my babylovelove </h1>
+            <p class="catchy-subtitle font-serif-romantic">Jocelle Tianan Velasco</p>
+        </header>
+
+        <div class="perspective-container">
+
+            <div id="envelope" class="envelope-wrapper pulse-ambient">
+
+                <div class="envelope-back">
+                    <div class="envelope-back-pattern"></div>
+                    <div class="envelope-back-shadow"></div>
+                </div>
+
+                <div id="photobooth-strip" class="photobooth-strip" title="Tap to view our memories" role="button"
+                    aria-label="Photobooth Film Strip">
+                    <div class="film-tape"></div>
+                    <div class="film-strip-inner">
+                        <div class="film-header">
+                            <span class="film-logo"> OUR MEMORIES </span>
+                            <span class="film-cut-tag">For Keeps</span>
+                        </div>
+
+                        <div class="film-photos">
+                            <div class="film-frame">
+                                <div class="film-img-box">
+                                    <img src="images/i.jpg" alt="Golden Hour Sunset" class="film-img">
+                                    <div class="film-gloss"></div>
+                                </div>
+                                <span class="film-frame-label font-handwriting">our 1st hike </span>
+                            </div>
+
+                            <div class="film-frame">
+                                <div class="film-img-box">
+                                    <img src="images/ii.jpg" alt="Coffee & Laughter" class="film-img">
+                                    <div class="film-gloss"></div>
+                                </div>
+                                <span class="film-frame-label font-handwriting">toram ₍ᐢ.ˬ.ᐢ₎♡~ </span>
+                            </div>
+
+                            <div class="film-frame">
+                                <div class="film-img-box">
+                                    <img src="images/iii.jpg" alt="Starry Beach Night" class="film-img">
+                                    <div class="film-gloss"></div>
+                                </div>
+                                <span class="film-frame-label font-handwriting">our latest hike </span>
+                            </div>
+                        </div>
+
+                        <div class="film-footer">
+                            <span class="film-date">OCT 24</span>
+                            <div class="film-barcode">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="letter" class="letter-card">
+
+                    <div class="letter-top-bar">
+                        <div class="letter-accent-top">
+                            <span class="accent-line"></span>
+                            <i class="fa-solid fa-heart accent-heart"></i>
+                            <span class="accent-line"></span>
+                        </div>
+                        <span class="page-indicator" id="pageIndicator">Page 1 of 3</span>
+                        <button class="letter-close-btn" id="btnCloseEnvelopeTop" title="Close & Re-seal Envelope"
+                            aria-label="Close Envelope">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div id="letter-content" class="letter-content letter-scroll">
+
+                        <article class="letter-page active" data-page="1">
+                            <h2 class="letter-salutation font-cursive">My Dearest Sol,</h2>
+                            <p class="letter-paragraph font-serif-romantic">
+                                Happy 3rd Monthsary, Sol! 🩵
+                            </p>
+                            <p class="letter-paragraph font-serif-romantic">
+                                I’m so thankful that I get to spend these months with you, and I hope you know how much I appreciate you for always being there for me, serin. Thank you for making my days better just by being part of them, for staying by my side, and for loving me the way you do. I love you so much, Sol, and I wouldn't trade what we have for anything.
+                            </p>
+                        </article>
+
+                        <article class="letter-page" data-page="2">
+                            <p class="letter-paragraph font-serif-romantic">
+                                Thank you for the silent comfort on my hardest days, the unprompted laughter on ordinary
+                                ones, and the quiet way you turn simple moments into memories I'll hold onto forever. 
+                            </p>
+                            <p class="letter-paragraph font-serif-romantic">
+                                I know I can be difficult sometimes, and I'm sorry for the times I've hurt your feelings or made things harder than they should be. I know I still have a lot to work on, and I can't promise I'll get everything right all the time, but I promise I'll keep trying to be better for myself and for us. I love you so much, mylove mybaby mywife myeverything, and the last thing I ever want is for you to feel like your feelings don't matter to me.
+                            </p>
+                        </article>
+
+                        <article class="letter-page" data-page="3">
+                            <p class="letter-paragraph font-serif-romantic">
+                                I know we're both going to get busy figuring things out with our lives, and even with the distance between us, I want you to know that you're still the one I want, and you will always be the one I choose. Even on days when we can't talk as much or when life gets in the way, I hope we keep choosing each other and never let the distance or our busy days make us forget what we have. I love you, Sol, and I genuinely hope that one day we'll look back at all these little milestones and realize we made it through everything together, celebrating them until the very end. 🩵
+                            </p>
+                            <div class="letter-sign-section">
+                                <span class="letter-date">OCT 24 • 2026</span>
+                                <div class="letter-sign-box">
+                                    <span class="letter-sign-text font-serif-romantic">Forever yours,</span>
+                                    <span class="letter-sign font-cursive">Always 🩵</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <footer class="letter-footer">
+                        <button class="nav-btn" id="prevBtn" disabled aria-label="Previous Page">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous</span>
+                        </button>
+
+                        <button class="nav-btn close-btn" id="btnCloseEnvelope" aria-label="Close and Re-seal envelope">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Close</span>
+                        </button>
+
+                        <button class="nav-btn primary" id="nextBtn" aria-label="Next Page">
+                            <span id="nextBtnText">Next Page</span>
+                            <i id="nextBtnIcon" class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </footer>
+
+                </div>
+
+                <div class="flap flap-left"></div>
+                <div class="flap flap-right"></div>
+                <div class="flap flap-bottom"></div>
+
+                <div id="top-flap" class="flap flap-top">
+                    <div class="flap-top-overlay"></div>
+                </div>
+
+                <div id="wax-seal" class="wax-seal" role="button" aria-label="Open Letter">
+                    <div class="wax-seal-inner">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="open-hint" class="open-hint font-serif-romantic">Tap the seal to open (˶˃ ᵕ ˂˶)♡</p>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
